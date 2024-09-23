@@ -1,0 +1,7 @@
+this pointer :
+    this[C, C++, Java, C#, JS] == me[Visual BASIC] == self[Python] pointer
+    this.[C, Java, C#, JS] == me.[Visual BASIC] == self.[Python] == this->[C++]
+
+    [this] is pointer in C++ and reference in JAVA & C#
+
+    [this->a = a] now LHS(a) will be considered as INSTANCE variable and RHS(a) will be considered as LOCAL variable

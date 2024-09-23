@@ -1,0 +1,42 @@
+[] - Capture List
+() - Parameter List
+
+void fun() {
+    cout << "HI"; // This code can also be written as LAMBDA expression as - []() {  cout << "HI";   };
+}
+
+Capture List is used to use the variables define before the capture list
+To use variables after the capture list, we need to pass them as parameters in parameters list
+    auto fp = [](int a, int &b) {
+                                    b = 10;
+                                    cout << a + b;
+                                };
+    int a = 10, b = 20;
+    fp(a, b);
+
+
+Exception Handling -
+    Exception Handling in a C++ is a process to handle runtime errors. We perform exception handling so the normal flow of the application can be maintained even after runtime errors
+    All exceptions are derived from std::exception class
+    If we don't handle exception, it prints exception message and terminates the program
+    It maintain the normal flow of the application
+    In such case, rest of the code is execute even after exception
+    In C++ standard exceptions are defined in <exception> class
+
+    <exception> ---- bad_alloc
+                
+              ---- logic_error      ----    length_error
+                                    ----    domain_error
+                                    ----    out_of_range
+                                    ----    invalid_argument 
+
+              ---- runtime_error    ----    range_error
+                                    ----    overflow_error
+                                    ----    underflow_error
+
+              ---- bad_cast
+
+    We use 3 keywords ot perform exception handling -
+                                                    try
+                                                    catch
+                                                    throw

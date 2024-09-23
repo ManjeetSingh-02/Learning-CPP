@@ -1,0 +1,15 @@
+Dynamic Memory Allocation -
+                        C =>
+                            Allocation - malloc() function, calloc() function, realloc() function
+                            Deallocation - free() function
+                        C++ =>
+                            Allocation - new operator
+                            Deallocation - delete operator
+
+                        int *p = new int;
+                        Stack => p having heap address of 786
+                        Heap => 786 stored here pointed by p
+
+                        datatype pointer_name = new datatype - int *p = new int;
+                        datatype pointer_name = new datatype(initial value) - int *p = new int(4);
+                        datatype pointer_name = new datatype[array_size] - int *p = new int[4]; -------> This will create continious memory allocation in HEAP as DYNAMIC ARRAY

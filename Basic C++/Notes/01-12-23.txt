@@ -1,0 +1,13 @@
+In C++, "endl" is special operator
+
+Overloading - Depends on arguments
+
+Method Overloading - Name of methods are same but signature is different
+Signature - Type of arguments, No of arguments, Order of arguments
+Return type is not part of signature
+
+Constructor Overloading - Name of constructor are same but signature is different
+Signature - Type of arguments, No of arguments, Order of arguments
+Return type is not part of signature
+
+Destructor Overloading does not exist as no arguments can be passed inside Destructor because if any object is destroying then there is no mean to pass the input in it

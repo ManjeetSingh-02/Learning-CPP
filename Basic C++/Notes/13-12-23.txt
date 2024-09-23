@@ -1,0 +1,21 @@
+Polymorphism
+    One of OOPS concept
+    Concept is - One Thing Many Forms
+    One object can behave differently in different situations
+    
+Types of Polymorphism
+    Compile Time Polymorphism
+    Run Time Polymorphism
+
+Compile Time Polymorphism / Compile Time Binding / Static Binding / Early Binding / Static Linking
+    Implemented by overloading(Constructor or Method or Operator overloading)
+    In this function definition is bind with function call in compile time
+    Constant Overloading
+    Function Overloading
+    Operator Overloading
+
+Run Time Polymorphism / Run Time Binding / Dynamic Binding / Late Binding / Dynamic Linking
+    Implemented by overwriting(VIRTUAL Keyword)
+    In this function definition is bind with function call in run time
+
+In case of pre and post increment operator overloading, we need to pass `int` as an argument in post-increment

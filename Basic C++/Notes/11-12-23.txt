@@ -1,0 +1,1 @@
+When we do inheritance, every member of class will inherit except constructor and destructor

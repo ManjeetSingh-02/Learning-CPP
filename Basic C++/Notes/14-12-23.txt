@@ -1,0 +1,18 @@
+Incapsulation - Putting data and method in a single unit
+
+Abstraction - Only show necessarry things
+
+Pure Virtual Function - virtual void mylogic() = 0;    
+Abstract method of JAVA = Abstract method of C# = Pure Virtual Function of C++
+
+Types of Abstraction
+    Data Abstraction
+    Method Abstraction
+
+Data Abstraction
+    Only set limited and necessarry data
+
+Method Abstraction
+    Only Function declaration and prototype is written
+    No function definition
+    Pure virtual function is aka Function Abstraction

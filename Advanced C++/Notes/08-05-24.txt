@@ -1,0 +1,87 @@
+Inline Function -
+                Send request to compiler
+                Compiler will check for :
+                                        No LOOP
+                                        No Switch
+                                        No GOTO
+                                        No Recursive Function
+                                        No Static Variable
+                If code is easy then it will be treat as inline Function
+                In this, control will not go to that function as the whole function will be overwritten as its body
+
+
+Public vs Private vs Protected -
+                        In Single Class, PRIVATE and PROTECTED both are same
+                        In Inheritance, PRIVATE and PROTECTED both are not same
+
+                        PUBLIC -
+                                Inside parent class will be accessible
+                                Inside child class will be accessible
+                                Outside class will be accessible
+
+                        PRIVATE -
+                                Inside parent class will be accessible directly
+                                Inside child class will be accessible indirectly(object of child class having public method of parent class)
+                                Outside class will be accessible indirectly(object of class having public method of class)
+
+                        PROTECTED -
+                                Inside parent class will be accessible directly
+                                Inside child class will be accessible indirectly(object of child class having public method of child class)
+                                Outside class will be accessible indirectly(object of class having public method of class)
+
+
+Friend Function -
+                Member Function of class has body inside class
+                Friend Function of class has declared inside class
+                Body of friend function cannot be inside class
+                Friend function can be a inside any class or outside the class
+                It can access private data of the class
+
+                class A {
+                        private:
+                                int a;
+                                friend void AGM(A &);
+                };
+                void AGM(A &tmp) {
+                        tmp.a = 10;
+                        cout << tmp.a;
+                }
+
+
+                class B {
+                        private:
+                                int b;
+                                friend void BGM();
+                };
+                void BGM() {
+                        A tmp;
+                        tmp.b = 10;
+                        cout << tmp.b;
+                }
+
+
+                int main() {
+                        A obj;
+                        AGM(obj);
+                        BGM();
+                        return 0;
+                }
+
+
+NAMESPACE - It is collection of sub namespaces, classes, structures, enums, methods and variables
+            It is the idea to group the similar items in one unit
+
+        namespace A {
+                int n;
+        }
+        int main() {
+                A::n = 10;
+                cout << A::n;
+                return 0;
+        }
+
+        using namespace A;
+        int main() {
+                n = 10;
+                cout << n;
+        }

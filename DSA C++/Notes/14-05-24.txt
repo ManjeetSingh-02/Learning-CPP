@@ -1,0 +1,88 @@
+Data => 'A', "ABC"
+
+Data + Data Structure =====> Information
+BTA(Data) ====> STRUCTURED WAY ======> TAB(Information)
+
+Data Structure => Organization of data in a way such that it can be used in an efficient way(in terms of time and space)
+                Arrangement of Data in Efficient way(in terms of time and space)
+
+Data Type =>
+            Domain of Values
+            Operations on the Values
+
+Types of Data Types =>
+                    Primitive -> Domain and Operations of values is decided by language itself
+                                int - a, b, c      ||   10, 12, 13            ||   +, -, *, /, %, Bitwise
+                                float - a, b, c    ||   10.2f, 12.4f, 13.7f   ||   +, -, *, /
+                                char - a, b, c     ||   'A', 'B', 'C'         ||   
+                                double - a, b, c   ||   10.2, 12.4, 13.7      ||   +, -, *, /
+
+                    User Defined --> Domain and Operations of values is decided by user
+                                    struct Student
+                                    {
+                                        int id;
+                                        string name;
+                                    };
+                                    void set(struct Student) {
+
+                                    }
+                                    int main() {
+                                        struct Student s;
+                                        set(s);
+                                    }
+
+
+
+                                    struct Point {
+                                        int x, y;
+                                    };
+                                    void diff(struct Point a, string Point b) {
+
+                                    }
+                                    int main() {
+                                        struct Point p1, p2;
+                                        diff(p1, p2);
+                                    }
+
+
+
+                                    struct Date {
+                                        int DD, MM, YYYY;
+                                    };
+                                    void calc(struct Date a, struct Date b) {
+
+                                    }
+                                    int main() {
+                                        struct Date d1, d2;
+                                        calc(d1, d2);
+                                    }
+
+
+                    Abstract --> C++ put Domain and Operations in single Unit known as CLASS
+                                Class A {
+                                    Domain of Values
+                                    Operations on Values
+                                };
+
+
+
+                                class Stack { <------------------ This is known as Abstract Data Type(both domain and operations in single unit)
+                                    int data;
+
+                                    public:
+                                    void push(int x) {
+
+                                    }
+                                    void pop() {
+                                        
+                                    }
+                                    void traverse() {
+
+                                    }
+                                };
+                                int main() {
+                                    Stack s;
+                                    s.push(5);
+                                    s.pop();
+                                    s.traverse();
+                                }

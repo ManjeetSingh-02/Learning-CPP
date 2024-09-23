@@ -1,0 +1,46 @@
+Function Pointer -
+    void add(); => void (*fp)();
+        *fp1 can have address of any function that has return type void and arguments are 0
+    int add(); => int (*fp)();
+        *fp1 can have address of any function that has return type int and arguments are 0
+    void add(int, int) => void (*fp)(int, int);
+        *fp1 can have address of any function that has return type void and arguments are 2 integers
+    float add(float, float) => float (*fp)(float, float);
+        *fp1 can have address of any function that has return type float and arguments are 2 float type
+
+Lambda Expression -
+    It was introduced in C++ 11
+    It removed complexity of function pointer
+    It is also called as anonymous function
+    It is inline anonymous function as an expression to initialize the function pointer
+    By calling function pointer, we can run the set of statement of lambda expression
+    In default case, it does not have access to any of variable present - within the main function
+    To get the access, it required to make some modifications to capture list of expressions
+
+    Syntax -
+            [capture list of expressions] (parameter list)
+            {
+                statement1;
+                statement2;
+            };
+
+    For small functions we use LAMBDA Expression and we call that function as an expression
+    For big functions we use Function Pointer
+
+    While writing lambda expression, by default there will be no access to the variable within which the expression is written
+    So to get access to those variable, it's needed to make the following changes in capture list of the lambda expression
+    We always write all part first and other part second - [&,a] or [=, &a]
+    [&,a] != [a,&]
+
+    Changes -
+            [] : Capture Nothing
+            [=] : Capture Everything by value, it gives only read access
+            [&] : Capture Everything by reference, it gives both read and write access
+            [=,&x] : Capture Everything by value and x var by reference
+            [&,x] : Capture Everything by reference and x by value
+            [&,=x] : This gives error because = is not used explicitly with identifier
+
+New Datatypes of C++ -
+                        bool - 0/1
+                        string
+                        auto - It can store any type of value(int, float, char, string, double), it can automatically detect the type and allocate memory

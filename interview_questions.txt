@@ -1,0 +1,12 @@
+Difference between macro and inline functions
+Difference between references and pointer
+Difference between assignment operator and copy constructor
+Why java doesn't have multiple inheritance - Diamond Problem
+What is difference between C++ and Java
+What is Error
+What is Exception
+Difference between Error and Exception
+Difference between Dynamic Memory Allocation of C and C++
+Difference between  - int *p = new int(4); and int *ptr = new int[4];
+Difference between  - delete p; and delete[] ptr;
+Difference between STATIC ARRAY and DYNAMIC ARRAY

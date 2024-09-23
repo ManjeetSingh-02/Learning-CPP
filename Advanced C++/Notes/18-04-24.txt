@@ -1,0 +1,16 @@
+Same Task - Overloading (Name of method is same but behaviour of code is different)
+            area(int x)
+            area(int x, int y)
+            area(int x, int y, int z)
+
+Identical Task - Template (Name and code of method is same but type is different)
+                max<int>(10)
+                max<float>(12.1f)
+                max<double>(12.12)
+
+Template Class -
+                    Keywords - template
+                                class
+                    template <class T>
+                    T x
+                    classname<type> object(value); - A<string> obj("Hello");

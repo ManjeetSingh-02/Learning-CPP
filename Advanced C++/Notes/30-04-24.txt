@@ -1,0 +1,19 @@
+Error Handling -
+    Error means bug in the program
+    Some error will not allow the program to run and some error will allow the program to run
+    When program is terminated abnormally, that is known as EXCEPTION
+    Error can be removed but exceptions cannot be removed, it can only be handled by EXCEPTION HANDLING
+    On the basis of type of execution, we face some errors
+
+    Types -
+            [+] Compile Time Error(Syntax Error & Semantic Error) - Compiler will check syntax and semantic rules
+                                                                    int arr{3};  <--- Syntax Error
+                                                                    int arr[-2]; <--- Semantic Error
+
+            [+] Linker/Linking Error - It will occur at time of linking of files and memory
+
+            [+] Loader/Loading Error - It will occur when memory is full
+
+            [+] Run Time Error - An error that occur at the time of execution of the program and this error is called EXCEPTION
+
+            [+] Logical Error - This error will not stop program's compilation and execution but due to logical error, output might be improper

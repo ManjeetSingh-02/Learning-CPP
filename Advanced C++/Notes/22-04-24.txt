@@ -1,0 +1,15 @@
+Operator Overloading using Friend Function - 2 Arguments
+Operator Overloading without using Friend Function - 1 Argument
+
+Friend Function can access the private data if its declared inside class and define outside class
+
++ Operator is already overloaded
+<< Operator is already overloaded
+>> Operator is already overloaded
+
+To learn Lambda Expression, these topics needs to be known -
+    Pointer
+    Function
+    Pointer to Function - Pointer contains address of a function
+    Int as argument in function
+    Function as argument in function

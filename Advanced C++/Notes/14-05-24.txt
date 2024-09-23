@@ -1,0 +1,9 @@
+Malloc() => Return Address on Successful Memory Allocation
+            Return NULL on Unsuccessful Memory Allocation
+            Typecasting is done manually
+            Deallocation is done by free()
+
+New => Return Address on Successful Memory Allocation
+    Throw Exception on Unsuccessful Memory Allocation
+    Typecasting is done automatically
+    Deallocation of Memory is done by delete/delete[]

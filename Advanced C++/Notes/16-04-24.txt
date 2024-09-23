@@ -1,0 +1,30 @@
+When we extend the properties of one class into another class, that is Inheritance
+class A {
+};
+class B : public A {
+};
+
+
+If one class has object of another class, that is Aggregation
+class A {
+};
+class B {                            <==== Aggregation
+    A obj;
+};
+
+
+One thing many forms, that is Polymorphism
+Compiler Time Polymorphism - Overloading
+Run Time Polymorphism - Overiding(Intentionally hides the parent class function with the help of child class) - Method Hiding(Not Intentionally hides the parent class function with the help of child class)
+
+
+Method Overloading in Single Class is allowed in C++ but not allowed in Multiple Class using Inheritance
+Method Overloading in Single Class and Multiple Class using Inheritance is allowed in Java that's why Java is better OOPS language than C++
+
+Template Function - Generic Function
+                    Keywords - template
+                                typename
+                    template <typename T>
+                    T x
+                    fname<type tvar>(value); - mymax<int>(10);
+                    type fname(tvar var) {  }

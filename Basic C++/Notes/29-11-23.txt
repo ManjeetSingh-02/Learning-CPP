@@ -1,0 +1,21 @@
+Constructor :
+    It is special member function of the class
+    The name of constructor is same as class name
+    It is used to construct the memory for members and to initialize them
+    It does not have any return type, not even VOID
+    Static Constructor does not exist
+    Only Non-Static Constructor exist
+    Constructor is invoked(called) automatically when we create object, no need to call constructor for each object explicitly
+    We can have multiple constructor in a class with different signature(prototype/no-of-arguments)
+    When we dont have any constructor in the class, then compiler will add default constructor to allocate memory to the members of the class
+
+Destructor :
+    It is also special member function of the class
+    The name of destructor is same as class name preceeded with tilt(~) symbol
+    It is used to destruct the memory for members and to deallocate them
+    It does not have any return type, not even VOID
+    Destructor is invoked(called) automatically when scope of object is going to be finished
+    There is no concept like destructor overloading
+
+Destructor Calling is reverse of Constructor Calling
+C[4,5,6] => D[6,5,4]

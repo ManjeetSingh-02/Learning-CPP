@@ -1,0 +1,22 @@
+Constructor without Inheritance :
+    If there is no inheritance, means no relationship between classes A & B
+    Then on creating a object of a class A, it will invoke constructor of A
+    Then on creating a object of a class B, it will invoke constructor of B
+
+Constructor with Inheritance :
+    Any class can only have 2 types of relationships - ISA Relation & HASA Relation
+    ISA Relation :
+        Parent - Child Relation
+
+In class there are 3 Accessbility Modes:
+    Public
+    Private
+    Protected
+
+In inheritance there are 3 Visibility Modes:
+    Public
+        class B : public A
+    Private
+        class B : A == Class B : private A
+    Protected
+        class B : protected A

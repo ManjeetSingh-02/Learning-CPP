@@ -1,0 +1,26 @@
+Abstraction - Incomplete
+Concrete - Complete
+
+
+When a class has atleast one abstract method then it is called as Incomplete or Abstract Class
+class A ------------------> Concrete Class or Complete Class
+{
+public:
+
+    void mylogic() // Concrete Function or Complete Function
+    {
+        cout << "My Logic" << endl;
+    }
+};
+class A ------------------> Abstract Class or Incomplete Class
+{
+public:
+    virtual void logic() = 0; // Abstract Function or Incomplete Function
+};
+
+
+Any function that is virtual and it is assigned 0 as a body is called PURE VIRTUAL FUNCTION
+virtual void logic() = 0; -----------> This is PURE VIRTUAL FUNCTION
+
+
+We can create pointer of Abstract/Incomplete Class but we cannot create object of Abstract/Incomplete Class

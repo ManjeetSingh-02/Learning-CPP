@@ -1,0 +1,73 @@
+C++ was developed by Bjarne Stroustrup at AT & T Bell Laboratory of USA in 1983
+
+Object Oriented Concepts
+    Objects
+    Class
+    Methods
+    Abstraction
+    Inheritance
+    Encapsulation
+    Polymorphism
+
+
+
+Drawbacks of traditional programming
+    Unmanageable Programs
+    Problems in modification of data
+    Difficulties in implementation
+    Focus on function rather than data
+    Programs are divided in what are known as OBJECTS
+    Functions that operate on the data of an object are tied together in the data structure
+    Data is hidden & cannot be accessed by external functions
+    New data & functions can be easily added whenever necessarry
+
+
+
+Inline()
+    Whenever a function is called, it takes a lot of extra time in executing a series of instructions for tasks such as -
+        jumping to the function,
+        saving registers,
+        pushing arguments in to the stack and
+        returning to the call function
+    
+    Above taks will execute always, either the function is small or big
+    
+    When a function is small, these tasks become overhead
+    
+    One solution to this problem is to use macro definition(macro like function)
+    
+    C++ has a different solution to this problem that is called INLINE()
+    
+    An Inline() is a function that is expanded in line when it is invoked(compiler replaces the function call with the corresponding function code)
+    
+    To make a function inline to the function definition
+    For example,
+        inline double cube(double a) {
+            return a*a*a;
+        }
+        c = cube(3.0);
+        d = cube(2.5+1.5);
+    
+    Usually the functions are made inline when they are small enough to be defined in one or two lines
+
+    Remember that the inline keyword sends a request, not a commmand, to the compiler. The compiler may ignore this request if the function definition is too long & too complicated. Compiler will treat inline() as a normal()
+
+    Some of the situations where inline expansion may not work -
+        if it has a loop, switch, goto
+        if function contains static variables
+        if function is recursive
+
+
+
+OOPS
+    Class - User defined datatype(2 members)
+        data => static data & non-static data
+        function => static function & non-static function
+                                OR
+        static => static data & static function
+        non-static => non-static data & non-static function
+                                AND
+        static variable - class variable
+        non-static variable - instance variable
+
+    Object - Instance/Variable

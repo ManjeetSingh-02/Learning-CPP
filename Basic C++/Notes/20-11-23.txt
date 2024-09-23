@@ -1,0 +1,20 @@
+Class is a collection of data & methods
+
+Class can have 2 types of members:
+    Non - Static:
+        Non - Static Data / Instance Data
+        Non - Static Function
+    Static:
+        Static Data / Class Data
+        Static Function
+
+
+No memory will be allocated to the members of the class, when its just created
+On creating object, non-static members will gets its memory allocation
+Non-Static members will gets its memory every time a new instance is created
+Static members will gets its memory one time when class is created & they will be shared among all objects
+
+
+Z Rule:
+    Static Method can access Static Data & Methods
+    Non - Static Method can access both Static, Non - Static Data & Methods

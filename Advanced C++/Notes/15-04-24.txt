@@ -1,0 +1,77 @@
+Data => Structure => Primary Memory
+        Tabular Structure => Secondary Memory
+
+Data Structure is a technique to store data in memory in efficient way to perform some operations on data
+
+Datatype => User Defined Datatype => Abstract Datatype => Data Structure
+
+Different Structures =>
+                        Array => Datatype
+                        Linked List => User Defined Datatype
+                        Stack(Static/Dynamic)
+                        Queue(Static/Dynamic)
+                        Tree
+                        Graph
+
+Datatype => Data + Operations => Language => C
+            int x = 3;
+
+User Defined Datatype => Data + Operation(function) => User
+                        struct add {
+                            int x, b;
+                        };
+
+Abstract Datatype => Data + Functions
+                    class Add {                        <= ARRAY ADT
+                        int arr[10];
+
+                        int search() {
+
+                        }
+
+                        void add() {
+
+                        }
+
+                        void delete() {
+
+                        }
+                    };
+
+                    class Stack {                        <= STACK ADT
+                        int data[10];
+
+                        void push() {
+
+                        }
+
+                        void pop() {
+
+                        }
+                    };
+
+DS => Data Structure
+ADT => Abstract Datatype
+STL => Standard Template Library
+
+Problem => DS => ADT => Client Program
+            DS => STL/ADT => Client Program
+
+C => C++ => Advance Topics of C++ =>
+                                    OOPS
+                                    Template Function
+                                    Template Class
+                                    Lamda Expression
+                                    Function Pointer
+                                    Exception Handling
+                                    Smart Pointer
+                                    ADT
+                                    STL
+
+OOPS in C++ =>
+                Class
+                Object
+                Encapsulation
+                Inheritance
+                Polymorphism
+                Abstraction
